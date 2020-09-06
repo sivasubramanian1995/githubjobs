@@ -4,9 +4,29 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./www",
-    "knex": "knex"
+    "knex": "knex",
+    "dev": "craco start",
+    "build": "cross-env GENERATE_SOURCEMAP=false craco build",
+    "test": "craco test",
+    "eject": "craco eject"
   },
   "dependencies": {
+    "@craco/craco": "^5.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-decorators": "^7.10.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "babel-plugin-import": "^1.13.0",
+    "craco-less": "^1.17.0",
+    "craco-less-plugin": "^0.0.3",
+    "cross-env": "^7.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.4.1",
     "await-to-js": "^2.1.1",
     "axios": "^0.20.0",
     "bookshelf": "^1.2.0",
@@ -17,5 +37,23 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.4",
     "sqlite3": "^5.0.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "webpackbar": "^4.0.0"
   }
 }
