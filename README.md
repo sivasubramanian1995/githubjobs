@@ -1,5 +1,7 @@
 # githubjobs
 
+![alt text](preview.png "Title")
+
 ### Start dev Server : 
 1. npm install
 2. Make sure sqlite is installed and running.
