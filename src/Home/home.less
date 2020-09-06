@@ -33,6 +33,10 @@
     .description {
         margin-bottom : 50px;
     }
+    .how_to {
+        margin-bottom : 50px;
+    }
+
   }
   .cards {
     margin-top: 20px;
@@ -42,6 +46,23 @@
     margin-bottom: 2.1%;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-between;
+    .content{
+        width: 95%;
+    }
+    .indicator {
+        // position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 40px;
+        }
+    }
   }
   .card-title {
     font-size: 20px;
@@ -69,4 +90,18 @@
       text-decoration: none;
     }
   }
+}
+
+.contentBox {
+    border-bottom: 2px solid #222f3e;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-content: center;
+    img{
+        height: 75px;
+        width: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+    } 
 }
